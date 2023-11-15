@@ -4,7 +4,7 @@
 --><extensioninfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extensioninfo.xsd">
            
     
-    <extension abstractclassprefix="Generated" classprefix="Concerttours" jaloLogicFree="true" managername="ConcerttoursManager" managersuperclass="de.hybris.platform.jalo.extension.Extension" name="concerttours" usemaven="false">
+    <extension abstractclassprefix="Generated" classprefix="Example" jaloLogicFree="true" managername="ExampleManager" managersuperclass="de.hybris.platform.jalo.extension.Extension" name="example" usemaven="false">
                   
       
         
@@ -17,15 +17,15 @@
       
         
         <!-- <requires-extension name="cms"/> -->
+                         
+      
 
-
-
-        <requires-extension name="example"/>
-
-        <coremodule generated="true" manager="concerttours.jalo.ConcerttoursManager" packageroot="concerttours"/>
+      
+        
+        <coremodule generated="true" manager="example.jalo.ExampleManager" packageroot="example"/>
                       
         
-        <webmodule jspcompile="false" webroot="/concerttours"/>
+        <webmodule jspcompile="false" webroot="/example"/>
                 					
 	
         
