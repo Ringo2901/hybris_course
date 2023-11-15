@@ -28,6 +28,12 @@
 				 returntype="java.lang.String"
 				 autocreate="true"
 				 generate="true"/>
+
+		<maptype code="TicketMap"
+				 argumenttype="java.lang.String"
+				 returntype="java.lang.String"
+				 autocreate="true"
+				 generate="true"/>
 	</maptypes>
 
 	<relations>
@@ -109,5 +115,35 @@
 			</attribute>
 		</attributes>
 	</itemtype>
+
+		<itemtype generate="true" code="AllAttributes" autocreate="true">
+		<deployment table="AllAttributes" typecode="30272" />
+		<attributes>
+			<attribute qualifier="name" type="java.lang.String">
+				<description>name of band</description>
+				<persistence type="property" />
+			</attribute>
+			<attribute qualifier="songs" type="SongsCollection">
+				<description>list of songs</description>
+				<persistence type="property" />
+			</attribute>
+			<attribute qualifier="genre" type="Genre">
+				<description>genre of songs</description>
+				<persistence type="property" />
+			</attribute>
+			<attribute qualifier="concertType" type="ConcertType">
+				<description>type of concert</description>
+				<persistence type="property" />
+			</attribute>
+			<attribute qualifier="tickets" type="TicketMap">
+				<description>tickets</description>
+				<persistence type="property" />
+			</attribute>
+			<attribute qualifier="bandMusicRelation" type="Band2MusicType">
+				<description>Relation to rock bands</description>
+				<persistence type="property" />
+			</attribute>
+		</attributes>
+		</itemtype>
 	</itemtypes>
 </items>
