@@ -32,8 +32,7 @@
     </bean>
 
     <mvc:view-controller path="/login" view-name="login"/>
-
-    <!-- Tell Spring MVC how to find its jsp files -->
+        <!-- Tell Spring MVC how to find its jsp files -->
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass"

@@ -64,6 +64,7 @@
         <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
     </filter>
 
+
     <!-- Spring Security Filter - uncomment it if you want to secure your application -->
     <!--<filter>
         <filter-name>springSecurityFilterChain</filter-name>
@@ -85,6 +86,7 @@
         <filter-name>concerttoursPlatformFilterChain</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
 
     <!-- Spring Security Filter mapping - uncomment it if you want to secure your application -->
     <!--<filter-mapping>
