@@ -1,0 +1,16 @@
+
+
+INSERT_UPDATE Product;code[unique=true];hashtag;catalogVersion(catalog(id),version)
+                     ;P001;concert2023;Default:Online
+
+INSERT_UPDATE MusicType;code[unique=true]
+                       ;rock
+
+INSERT_UPDATE Genre; name[unique=true]
+                    ;Rock
+
+INSERT_UPDATE Band2MusicType;source(code)[unique=true];target(code)
+                            ;A001;rock
+
+INSERT_UPDATE AllAttributes;name[unique=true];songs;genre(name);concertType(code);tickets;bandMusicRelation(source(code), target(code))
+                           ;allAttributes001;[song1, song2];Rock;openair;map("ticket1"->'A1', "ticket2"->'A2');A001:rock
