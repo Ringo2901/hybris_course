@@ -126,4 +126,15 @@
         <property name="newsService" ref="newsService" />
         <property name="configurationService" ref="configurationService" />
     </bean>
+
+    <alias name = "defaultTokenModelService" alias = "tokenModelService" />
+    <bean id = "defaultTokenModelService" class = "concerttours.service.impl.DefaultTokenModelService" >
+        <property name = "tokenDAO" ref = "tokenDAO" />
+        <property name = "modelService" ref = "modelService" />
+    </bean>
+
+    <bean id="tokenCronJob" class="concerttours.jobs.TokenCronJob" parent="abstractJobPerformable">
+        <property name="tokenModelService" ref="tokenModelService" />
+        <property name="configurationService" ref="configurationService" />
+    </bean>
 </beans>
