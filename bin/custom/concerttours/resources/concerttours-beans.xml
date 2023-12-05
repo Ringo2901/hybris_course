@@ -74,6 +74,12 @@
 		<property name = "tours" type="java.util.List&lt;concerttours.data.TourSummaryData&gt;"/>
 		<property name="imageURL" type="String" />
 	</bean>
+	<bean class="concerttours.data.ProducerData">
+		<description>Data object representing a producer</description>
+		<property name="id" type="String"/>
+		<property name="firstName" type="String"/>
+		<property name="lastName" type="String"/>
+	</bean>
 	<bean class = "concerttours.data.ConcertSummaryData">
 		<description >Data object for a concert summary</description>
 		<property name = "id" type = "String" />
@@ -81,6 +87,7 @@
 		<property name = "venue" type = "String" />
 		<property name = "type" type = "String" />
 		<property name = "countDown" type="Long"/>
+		<property name = "producer" type="concerttours.data.ProducerData"/>
 	</bean>
 	<bean class = "concerttours.data.TourData" >
 		<description>Data object representing a tour</description>
