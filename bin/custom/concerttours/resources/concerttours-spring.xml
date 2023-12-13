@@ -139,4 +139,13 @@
         <property name="tokenModelService" ref="tokenModelService" />
         <property name="configurationService" ref="configurationService" />
     </bean>
+
+    <alias name = "defaultProducerService" alias = "producerService" />
+    <bean id = "defaultProducerService" class = "concerttours.service.impl.DefaultProducerService" >
+        <property name = "producerDAO" ref = "producerDAO" />
+    </bean>
+    <alias name = "defaultConcertService" alias = "concertService" />
+    <bean id = "defaultConcertService" class = "concerttours.service.impl.DefaultConcertService" >
+        <property name = "concertDAO" ref = "concertDAO" />
+    </bean>
 </beans>
